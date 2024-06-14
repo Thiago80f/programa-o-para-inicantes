@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login e Cadastro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="phone">
+        <div class="screen">
+            <div class="container">
+                <div class="login-container" id="login-container">
+                    <h2>CRIADO POR THIAGO</h2>
+                    <h2>Login</h2>
+                    <div id="login-message" role="alert"></div>
+                    <form id="loginForm">
+                        <label for="login-username">Nome de usuário:</label>
+                        <input type="text" id="login-username" name="username" required>
+                        <label for="login-password">Senha:</label>
+                        <input type="password" id="login-password" name="password" required>
+                        <button type="submit">Entrar</button>
+                        <p>Não tem uma conta? <a href="#" id="show-signup">Cadastre-se</a></p>
+                    </form>
+                </div>
+
+                <div class="signup-container" id="signup-container" style="display:none;">
+                    <h2>Cadastro</h2>
+                    <div id="signup-message" role="alert"></div>
+                    <form id="signupForm">
+                        <label for="signup-username">Nome de usuário:</label>
+                        <input type="text" id="signup-username" name="username" required>
+                        <label for="signup-password">Senha:</label>
+                        <input type="password" id="signup-password" name="password" required>
+                        <button type="submit">Cadastrar</button>
+                        <p>Já tem uma conta? <a href="#" id="show-login">Faça login</a></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
